@@ -12,7 +12,7 @@ describe('O comporatmento do Formulario.tsx',()=>{
             </RecoilRoot>
         )
     
-        const input = screen.getByPlaceholderText('Insira os nomes do participante')
+        const input = screen.getByPlaceholderText('Insira os nomes dos participantes')
         const botao = screen.getByRole('button')
     
         expect(input).toBeInTheDocument()
@@ -24,7 +24,7 @@ describe('O comporatmento do Formulario.tsx',()=>{
                 <Formulario />
             </RecoilRoot>
         )
-        const input = screen.getByPlaceholderText('Insira os nomes do participante')
+        const input = screen.getByPlaceholderText('Insira os nomes dos participantes')
         const botao = screen.getByRole('button')
     
         fireEvent.change(input, {
@@ -44,7 +44,7 @@ describe('O comporatmento do Formulario.tsx',()=>{
                 <Formulario />
             </RecoilRoot>
         )
-        const input = screen.getByPlaceholderText('Insira os nomes do participante')
+        const input = screen.getByPlaceholderText('Insira os nomes dos participantes')
         const botao = screen.getByRole('button')
     
         fireEvent.change(input, {
@@ -70,7 +70,7 @@ describe('O comporatmento do Formulario.tsx',()=>{
                 <Formulario />
             </RecoilRoot>
         )
-        const input = screen.getByPlaceholderText('Insira os nomes do participante')
+        const input = screen.getByPlaceholderText('Insira os nomes dos participantes')
         const botao = screen.getByRole('button')
     
         fireEvent.change(input, {
