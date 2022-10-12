@@ -3,6 +3,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import { RecoilRoot } from 'recoil';
 import Rodape from './Rodape';
 import { useListaDeParticipantes } from '../state/hook/useListaDeParticipantes';
+import { useSorteador } from '../state/hook/useSorteador';
 
 jest.mock('../state/hook/useListaDeParticipantes', () => {
     return {
@@ -19,7 +20,7 @@ jest.mock('react-router-dom', () => {
 const mockSorteio = jest.fn()
 jest.mock('../state/hook/useSorteador', () => {
     return {
-        useNavigate: () => mockSorteio
+        useSorteador: () => mockSorteio
     }
 })
 
