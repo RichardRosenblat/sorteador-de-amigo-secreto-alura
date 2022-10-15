@@ -20,9 +20,9 @@ jest.mock('../state/hook/useResultadoSorteio', () => {
 describe('na pagina de sorteio', () => {
     const participantes = ['Lorem', 'ipsum', 'dolor']
     const resultado = new Map([
-        ['ipsum','Lorem'],
-        ['dolor','ipsum'],
-        ['Lorem','dolor'],
+        ['ipsum', 'Lorem'],
+        ['dolor', 'ipsum'],
+        ['Lorem', 'dolor'],
     ])
 
 
@@ -36,7 +36,7 @@ describe('na pagina de sorteio', () => {
             <Sorteio />
         </RecoilRoot>)
         const opcoes = screen.queryAllByRole('option')
-        expect(opcoes).toHaveLength(participantes.length)
+        expect(opcoes).toHaveLength(participantes.length + 1)
 
     })
     test('o amigo secreto é exibido quando solicitado', () => {
